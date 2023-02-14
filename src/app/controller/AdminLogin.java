@@ -1,6 +1,7 @@
 package app.controller;
 
 import app.Main;
+import app.api.ApiServiceImpl;
 import app.helpers.Email;
 import io.github.palexdev.materialfx.controls.MFXButton;
 import javafx.event.ActionEvent;
@@ -29,6 +30,8 @@ public class AdminLogin implements Initializable  {
     TextField emailTxt;
     @FXML
     PasswordField passTxt;
+
+    private ApiServiceImpl apiService = ApiServiceImpl.getInstance();
 
     // constructor for AdminLogin controller
     public AdminLogin() {
